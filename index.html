@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/css.css" />
   </head>
   <body>
-    <header class="header position-relative js-header margin-bottom-lg">
+    <header class="header position-relative js-header">
       <div class="header__container container max-width-lg">
         <div class="header__logo">
           <a href="#0">
@@ -51,21 +51,19 @@
             <div class="header__label">Main menu</div>
             <ul class="header__list">
               <li class="header__item">
+                <a href="#0" class="header__link" aria-current="page">Home</a>
+              </li>
+              <li class="header__item">
                 <a href="#0" class="header__link">About</a>
               </li>
               <li class="header__item">
-                <a href="#0" class="header__link">Solutions</a>
+                <a href="#0" class="header__link">Locations</a>
               </li>
               <li class="header__item">
-                <a href="#0" class="header__link" aria-current="page"
-                  >Resources</a
-                >
+                <a href="#0" class="header__link">Store</a>
               </li>
               <li class="header__item">
-                <a href="#0" class="header__link">Pricing</a>
-              </li>
-              <li class="header__item">
-                <a href="#0" class="header__link">Contact</a>
+                <a href="#0" class="header__link">Contact us</a>
               </li>
               <li
                 class="header__item header__item--divider"
@@ -123,6 +121,36 @@
         </nav>
       </div>
     </header>
+
+    <!--start Video -->
+    <section class="showcase">
+      <video src="image/video2.mp4" loading="lazy" muted loop autoplay></video>
+      <div class="overlay"></div>
+      <div class="text">
+        <h2>Never Stop To</h2>
+        <h3>Exploring The World</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+        <a href="#">Explore</a>
+      </div>
+      <ul class="social">
+        <li>
+          <a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png" /></a>
+        </li>
+      </ul>
+    </section>
+
+    <!--end Video -->
 
     <!-- section 2 -->
     <section class="position-relative z-index-1 margin-bottom-lg">
@@ -273,6 +301,25 @@
         </div>
       </div>
     </div>
+
+    <!-- Audio Player -->
+    <div class="audio-body">
+      <div class="align-content">
+        <h1>Glassmorphism</h1>
+        <div class="glassmorphism draggable">
+          <div class="player">
+            <div class="image">
+              <img src="https://picsum.photos/300/400" alt="photo" />
+            </div>
+            <audio controls>
+              <source src="image/Music.mp3" type="audio/mp3" />
+            </audio>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--   -->
+
     <!-- footer -->
     <footer
       class="
@@ -345,14 +392,16 @@
               </li>
 
               <li class="col-6@xs col-3@md">
-                <h4 class="margin-bottom-sm text-base@md">About</h4>
+                <h4 class="margin-bottom-sm text-base@md">Location</h4>
                 <ul class="grid gap-xs text-sm@md">
-                  <li><a href="#0" class="main-footer__link">Company</a></li>
-                  <li><a href="#0" class="main-footer__link">Customers</a></li>
-                  <li><a href="#0" class="main-footer__link">Careers</a></li>
-                  <li><a href="#0" class="main-footer__link">Education</a></li>
-                  <li><a href="#0" class="main-footer__link">Our story</a></li>
-                  <li><a href="#0" class="main-footer__link">Press kit</a></li>
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13537.238900635753!2d35.8225135!3d31.9796183!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x97e1a09530f58612!2sClever%20Mind%20POB%20ICT!5e0!3m2!1sen!2sjo!4v1638822677111!5m2!1sen!2sjo"
+                    width="300"
+                    height="200"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                  ></iframe>
                 </ul>
               </li>
             </ul>
@@ -448,6 +497,10 @@
           }
         });
     </script>
+
+    <!-- Require online -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
     <script src="js/js.js"></script>
   </body>
 </html>
